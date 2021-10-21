@@ -1,0 +1,44 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+After initialization, but before game start.
+  File "game/screens/dollscreens.rpy", line 7, in prepare_screen
+    screen dollScreen:
+  File "game/screens/dollscreens.rpy", line 7, in prepare
+    screen dollScreen:
+  File "game/screens/dollscreens.rpy", line 44, in prepare
+    imagebutton:
+  File "game/screens/dollscreens.rpy", line 44, in prepare
+    imagebutton:
+SyntaxError: invalid syntax (dollscreens.rpy, line 47)
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/bootstrap.py", line 326, in bootstrap
+    renpy.main.main()
+  File "renpy/main.py", line 617, in main
+    run(restart)
+  File "renpy/main.py", line 97, in run
+    renpy.display.screen.prepare_screens()
+  File "renpy/display/screen.py", line 939, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/screens/dollscreens.rpy", line 7, in prepare_screen
+    screen dollScreen:
+  File "game/screens/dollscreens.rpy", line 7, in prepare
+    screen dollScreen:
+  File "game/screens/dollscreens.rpy", line 44, in prepare
+    imagebutton:
+  File "game/screens/dollscreens.rpy", line 44, in prepare
+    imagebutton:
+  File "renpy/pyanalysis.py", line 712, in ast_eval
+    return self.ast_eval_literal(expr)[0]
+  File "renpy/pyanalysis.py", line 696, in ast_eval_literal
+    expr = py_compile(expr, 'eval', ast_node=True)
+  File "renpy/python.py", line 835, in py_compile
+    raise e
+SyntaxError: invalid syntax (dollscreens.rpy, line 47)
+
+Windows-10-10.0.19041
+Ren'Py 7.4.8.1895
+SCORING 1.0
+Sat Sep 18 19:06:56 2021

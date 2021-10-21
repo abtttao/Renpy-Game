@@ -1,0 +1,68 @@
+Sat Sep 18 19:06:54 2021
+Windows-10-10.0.19041
+Ren'Py 7.4.8.1895
+ 
+
+Bootstrap to the start of init.init took 0.07s
+Early init took 0.00s
+Loader init took 0.10s
+Loading error handling took 0.09s
+Loading script took 1.05s
+Loading save slot metadata. took 0.08s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.08s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\bunru\\AppData\\Roaming/RenPy/backups\\SCORING':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.04s
+Analyze screens took 0.01s
+Save screen analysis took 0.06s
+
+Full traceback:
+  File "renpy/bootstrap.py", line 326, in bootstrap
+    renpy.main.main()
+  File "renpy/main.py", line 617, in main
+    run(restart)
+  File "renpy/main.py", line 97, in run
+    renpy.display.screen.prepare_screens()
+  File "renpy/display/screen.py", line 939, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/screens/dollscreens.rpy", line 7, in prepare_screen
+    screen dollScreen:
+  File "game/screens/dollscreens.rpy", line 7, in prepare
+    screen dollScreen:
+  File "game/screens/dollscreens.rpy", line 44, in prepare
+    imagebutton:
+  File "game/screens/dollscreens.rpy", line 44, in prepare
+    imagebutton:
+  File "renpy/pyanalysis.py", line 712, in ast_eval
+    return self.ast_eval_literal(expr)[0]
+  File "renpy/pyanalysis.py", line 696, in ast_eval_literal
+    expr = py_compile(expr, 'eval', ast_node=True)
+  File "renpy/python.py", line 835, in py_compile
+    raise e
+SyntaxError: invalid syntax (dollscreens.rpy, line 47)
+
+After initialization, but before game start.
+  File "game/screens/dollscreens.rpy", line 7, in prepare_screen
+    screen dollScreen:
+  File "game/screens/dollscreens.rpy", line 7, in prepare
+    screen dollScreen:
+  File "game/screens/dollscreens.rpy", line 44, in prepare
+    imagebutton:
+  File "game/screens/dollscreens.rpy", line 44, in prepare
+    imagebutton:
+SyntaxError: invalid syntax (dollscreens.rpy, line 47)

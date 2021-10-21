@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 39: expected 'name' not found.
+    show screen 
+                ^
+
+Ren'Py Version: Ren'Py 7.4.8.1895
+Tue Sep  7 10:41:14 2021

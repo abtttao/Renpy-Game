@@ -1,0 +1,9 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens/dollscreens.rpy", line 17: is not terminated with a newline. (Check strings and parenthesis.)
+                action [SetVariable("dolls", dolls + 1), SetVariable("doll1", False]
+
+Ren'Py Version: Ren'Py 7.4.8.1895
+Tue Sep  7 09:29:34 2021

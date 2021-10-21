@@ -1,0 +1,16 @@
+Characters
+-Me
+-Sylvie
+
+Location
+-Home with many room
+
+Story
+- I visit Sylvie's home and her room, Each room has a quest and a differrent score
+-3 room
+    - bedroom :Q&A correct answer -> score +1 
+    - bathroom: Q&A
+    - living room: A mimi game to find thing
+-A mini game to find things
+-Use a total score to judge either good or bad ending
+    - (good score > 0)
